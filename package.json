@@ -7,11 +7,12 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "npm run prod",
+    "start": "node ./dist",
     "dev": "nodemon ./index.js --exec babel-node",
     "build": "babel ./api --out-dir dist/api && babel ./index.js -d dist",
     "prod": "npm run build && node dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm run build"
   },
   "author": "singa",
   "license": "ISC",
