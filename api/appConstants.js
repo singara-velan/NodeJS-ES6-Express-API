@@ -1,5 +1,6 @@
 //base service route
-const apiServiceRoute = '/api';
+const apiServiceRoute = '/v1';
+const swaggerSpecRoute = apiServiceRoute + '/spec';
 
 const sampleController = {
     routeName: '/sample',
@@ -10,5 +11,6 @@ const sampleController = {
 
 module.exports = {
     apiServiceRoute,
+    swaggerSpecRoute,
     sampleController
 }
