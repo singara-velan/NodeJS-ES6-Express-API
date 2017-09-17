@@ -4,7 +4,7 @@ import express from './api/express';
 
 let server;
 const config = {
-    port: 1234
+    port: process.env.PORT || 1234
 }
 
 // This method starts api service
