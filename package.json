@@ -2,10 +2,15 @@
   "name": "node-express-es6",
   "version": "1.0.0",
   "description": "Restful api with Express in ES6 standards",
+  "engines": {
+    "node": ">=6.x.x"
+  },
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js --exec babel-node",
+    "start": "npm run prod",
+    "dev": "nodemon ./index.js --exec babel-node",
     "build": "babel ./api --out-dir dist/api && babel ./index.js -d dist",
+    "prod": "npm run build && node dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "singa",
