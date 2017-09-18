@@ -1,5 +1,4 @@
 import nodemailer from 'nodemailer';
-import smtpTransport from 'nodemailer-smtp-transport';
 import appConstants from '../appConstants';
 
 // smtp configuration
